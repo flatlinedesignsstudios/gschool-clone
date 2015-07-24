@@ -1,0 +1,311 @@
+* { box-sizing: border-box; }
+/* Clearfix */
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+/* Columns & Row */
+.row {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.column {
+  float: left;
+  
+}
+
+.column.two-third {
+  width: 65%;
+}
+.column.one-half {
+  width: 49%;
+}
+.column.one-third {
+  width: 32%
+}
+
+.column:last-of-type {
+  margin-right: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', helvetica, sans-serif;
+}
+
+a {
+  transition: 333ms all ease-in-out;
+}
+
+a:hover {
+  color: #FB8B6F;
+}
+
+/* Header */
+header {
+  background: #ccc;
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+/* Cancel the header margin on home page. */
+body#home header {
+  margin-bottom: 0;
+}
+
+header .row {
+  margin-bottom: 0;
+}
+
+.logo {
+  float: left;
+  
+}
+
+nav {
+  margin-top: 31px;
+}
+
+header nav {
+  float: right;
+  text-align: right;
+}
+
+nav a {
+  margin-right: 20px;
+  font-size: 18px;
+  color: #444;
+  text-decoration: none;
+}
+
+nav a:last-of-type {
+  margin: 0;
+}
+/*the start of the home page one-half*/
+.one-half-home{
+  width: 50%;
+  height: 40vh;
+
+
+}
+
+.one-half-home h3{
+  padding-top: 5%;
+  margin-left: 5%;
+  }
+.one-half-home p{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.one-half-home-two{
+  width: 50%;
+  height: 40vh;
+  border-right: 0;
+  
+}
+.one-half-home-two h3{
+  padding-top: 5%;
+  margin-left: 5%;
+  }
+.one-half-home-two p{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+/*the end of the home page one-half*/
+
+/* Hero */
+.hero {
+  background: #ccc;
+  background-image: url('https://unsplash.imgix.net/uploads/1411589183965bdf6e141/5f468e98?fit=crop&fm=jpg&h=700&q=75&w=1050');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  margin: 0;
+  padding: 120px 0;
+  color: white;
+  text-shadow: 0 0 10px #444;
+  text-align: center;
+}
+
+/*The start of the about page*/
+.column.two-third{
+    width:65%;
+    overflow: auto;
+    float: left;
+    height: 95vh;
+
+    
+}
+.column.two-third .row{
+  width: 90%;
+ 
+
+}
+.column.two-third .row h1{
+  margin-top: 10%;
+  font-size: 36px;
+}
+.column.two-third .row p{
+  margin-top: 5%;
+  font-size: 20px;
+}
+/*the start of the sidebar*/
+.column.one-third{
+  width: 35%;
+  height: 95vh;
+  border-left: 2px solid #444;
+}
+
+.one-third  h1{
+    padding-top: 12%;
+}
+/*the end of the sidebar and about page*/
+
+/*the start of the contact page*/
+.one-half{
+  width: 50%;
+  height: 80vh;
+  border-right: 2px solid #444;
+
+}
+.one-half h1{
+  padding-top: 5%;
+  margin-left: 5%;
+  }
+.one-half p{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.one-half-map{
+  
+  width: 51%;
+  height: 80vh;
+}
+.map-container{
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 12%;
+}
+
+.map-container iframe{
+ width:100%;
+  
+
+}
+
+/*the end of the contact page*/
+
+/* Responsive */
+@media (max-width: 872px) {
+  header {
+    text-align: center;
+  }
+
+  .logo {
+    float: none;
+    width: 80px;
+  }
+
+  header nav {
+    float: none;
+    text-align: center;
+  }
+
+  .column {
+    width: 100% !important;
+    margin-right: 0;
+  }
+
+  /*Two-thirds responsive (about page)*/
+  .column.two-third{
+    height: 60vh;
+  }
+
+  .column.one-third{
+    height:60vh;
+  }
+  .one-third h1 {
+    padding-top: 0px;
+
+
+  }
+
+ } 
+
+ @media (max-width: 547px) {
+
+    .column.one-third{
+       height:75vh;
+  }
+    .column.two-third .row h1 {
+       margin-top: 10%;
+       font-size: 36px;
+    }
+    .column.two-third .row p{
+      font-size: 15px;
+    }
+
+  }
+@media (max-width: 356px) {
+
+    .column.two-third .row h1 {
+       margin-top: 10%;
+       font-size: 25px;
+    }
+
+    .one-third h1{
+      font-size: 19px;
+    }
+
+    .one-third p{
+      font-size: 17px;
+    }
+    /*the end of responsive about page*/
+    .one-half{
+    border:none;
+    height: 50vh;
+  }
+  .one-half-map{
+    height: 70vh;
+  }
+
+  .one-half h1{
+    font-size: 25px;
+  }
+
+    /*responsive contact page*/
+}
+
+/*responsive contact page*/
+@media (max-width: 886px) {
+  .one-half{
+    border:none;
+    height: 50vh;
+  }
+
+}
+
+/* Footer */
+   footer {
+     background: #ccc;
+     margin-top: 60px;
+     padding: 5px 0;
+     font-size: 11px;
+     text-align: center;
+     clear: both;
+  }
