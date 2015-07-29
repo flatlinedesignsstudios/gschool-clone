@@ -1,0 +1,89 @@
+/* Responsive */
+@media (max-width: 872px) {
+  header {
+    text-align: center;
+  }
+
+  .logo {
+    float: none;
+    width: 80px;
+  }
+
+  header nav {
+    float: none;
+    text-align: center;
+  }
+
+  .column {
+    width: 100% !important;
+    margin-right: 0;
+  }
+
+  /*Two-thirds responsive (about page)*/
+  .column.two-third{
+    height: 60vh;
+  }
+
+  .column.one-third{
+    height:60vh;
+  }
+  .one-third h1 {
+    padding-top: 0px;
+
+
+  }
+
+ } 
+
+ @media (max-width: 547px) {
+
+    .column.one-third{
+       height:75vh;
+  }
+    .column.two-third .row h1 {
+       margin-top: 10%;
+       font-size: 36px;
+    }
+    .column.two-third .row p{
+      font-size: 15px;
+    }
+
+  }
+@media (max-width: 356px) {
+
+    .column.two-third .row h1 {
+       margin-top: 10%;
+       font-size: 25px;
+    }
+
+    .one-third h1{
+      font-size: 19px;
+    }
+
+    .one-third p{
+      font-size: 17px;
+    }
+    /*the end of responsive about page*/
+    .one-half{
+    border:none;
+    height: 50vh;
+  }
+  .one-half-map{
+    height: 70vh;
+  }
+
+  .one-half h1{
+    font-size: 25px;
+  }
+
+    /*responsive contact page*/
+}
+
+/*responsive contact page*/
+@media (max-width: 886px) {
+  .one-half{
+    border:none;
+    height: 50vh;
+  }
+
+}

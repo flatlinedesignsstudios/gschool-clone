@@ -1,0 +1,33 @@
+/*The start of the about page*/
+.column.two-third{
+    width:65%;
+    overflow: auto;
+    float: left;
+    height: 95vh;
+
+    
+}
+.column.two-third .row{
+  width: 90%;
+ 
+
+}
+.column.two-third .row h1{
+  margin-top: 10%;
+  font-size: 36px;
+}
+.column.two-third .row p{
+  margin-top: 5%;
+  font-size: 20px;
+}
+/*the start of the sidebar*/
+.column.one-third{
+  width: 35%;
+  height: 95vh;
+  border-left: 2px solid #444;
+}
+
+.one-third  h1{
+    padding-top: 12%;
+}
+/*the end of the sidebar and about page*/
