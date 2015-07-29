@@ -1,71 +1,241 @@
-/*
-Error: Invalid CSS after "*": expected "{", was "the start of th..."
-       
-       "the" may only be used at the beginning of a compound selector.
-        on line 1 of C:/xampp/htdocs/gschool-clone/sass/_contact.scss
-        from line 16 of C:\xampp\htdocs\gschool-clone\sass\style.scss
+* {
+  box-sizing: border-box; }
 
-1: * { box-sizing: border-box; }
-2: 
-3: 
-4: 
-5: 
-6: // Imports
+/* Clearfix */
+/* Columns & Row */
+.row {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  *zoom: 1; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
 
-Backtrace:
-C:/xampp/htdocs/gschool-clone/sass/_contact.scss:1
-C:\xampp\htdocs\gschool-clone\sass\style.scss:16
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/static_parser.rb:172:in `simple_selector_sequence'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/static_parser.rb:112:in `selector'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/static_parser.rb:86:in `selector_comma_sequence'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1079:in `expr!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/static_parser.rb:20:in `parse_selector'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:414:in `visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block (2 levels) in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `block in with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:18:in `load'
-C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"*\": expected \"{\", was \"the start of th...\"\A        \A        \"the\" may only be used at the beginning of a compound selector.\A         on line 1 of C:/xampp/htdocs/gschool-clone/sass/_contact.scss\A         from line 16 of C:\xampp\htdocs\gschool-clone\sass\style.scss\A \A 1: * { box-sizing: border-box; }\A 2: \A 3: \A 4: \A 5: \A 6: // Imports"; }
+.column {
+  float: left; }
+
+.column.two-third {
+  width: 65%; }
+
+.column.one-half {
+  width: 49%; }
+
+.column.one-third {
+  width: 32%; }
+
+.column:last-of-type {
+  margin-right: 0; }
+
+/*the links*/
+a {
+  -webkit-transition: 333ms all ease-in-out;
+          transition: 333ms all ease-in-out; }
+
+a:hover {
+  color: #FB8B6F; }
+
+/*the start of the home page one-half*/
+.one-half-home {
+  width: 50%;
+  height: 40vh; }
+
+.one-half-home h3 {
+  padding-top: 5%;
+  margin-left: 5%; }
+
+.one-half-home p {
+  margin-left: 5%;
+  margin-right: 5%; }
+
+.one-half-home-two {
+  width: 50%;
+  height: 40vh;
+  border-right: 0; }
+
+.one-half-home-two h3 {
+  padding-top: 5%;
+  margin-left: 5%; }
+
+.one-half-home-two p {
+  margin-left: 5%;
+  margin-right: 5%; }
+
+/*the end of the home page one-half*/
+/* Header */
+header {
+  background: #ccc;
+  padding: 10px;
+  margin-bottom: 0px;
+  /* Cancel the header margin on home page. */ }
+  @media (max-width: 800px) {
+    header {
+      text-align: center; } }
+  body#home header {
+    margin-bottom: 0; }
+  header .row {
+    margin-bottom: 0; }
+  header .logo {
+    float: left; }
+
+nav {
+  margin-top: 31px; }
+  header nav {
+    float: right;
+    text-align: right; }
+  nav a {
+    margin-right: 20px;
+    font-size: 18px;
+    color: #444;
+    text-decoration: none; }
+    nav a:last-of-type {
+      margin: 0; }
+
+/* Hero */
+.hero {
+  background: #ccc;
+  background-image: url("https://unsplash.imgix.net/uploads/1411589183965bdf6e141/5f468e98?fit=crop&fm=jpg&h=700&q=75&w=1050");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.hero h1 {
+  margin: 0;
+  padding: 120px 0;
+  color: white;
+  text-shadow: 0 0 10px #444;
+  text-align: center; }
+
+/*The start of the about page*/
+.column.two-third {
+  width: 65%;
+  overflow: auto;
+  float: left;
+  height: 95vh; }
+
+.column.two-third .row {
+  width: 90%; }
+
+.column.two-third .row h1 {
+  margin-top: 10%;
+  font-size: 36px; }
+
+.column.two-third .row p {
+  margin-top: 5%;
+  font-size: 20px; }
+
+/*the start of the sidebar*/
+.column.one-third {
+  width: 35%;
+  height: 95vh;
+  border-left: 2px solid #444; }
+
+.one-third h1 {
+  padding-top: 12%; }
+
+/*the end of the sidebar and about page*/
+.one-half {
+  width: 50%;
+  height: 80vh;
+  border-right: 2px solid #444; }
+
+.one-half h1 {
+  padding-top: 5%;
+  margin-left: 5%; }
+
+.one-half p {
+  margin-left: 5%;
+  margin-right: 5%; }
+
+/*the end of the contact page*/
+/*google map*/
+.one-half-map {
+  width: 51%;
+  height: 80vh; }
+
+.map-container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 12%; }
+
+.map-container iframe {
+  width: 100%; }
+
+/* Responsive */
+@media (max-width: 872px) {
+  .logo {
+    float: none;
+    width: 80px; }
+
+  header nav {
+    float: none;
+    text-align: center; }
+
+  .column {
+    width: 100% !important;
+    margin-right: 0; }
+
+  /*Two-thirds responsive (about page)*/
+  .column.two-third {
+    height: 60vh; }
+
+  .column.one-third {
+    height: 60vh; }
+
+  .one-third h1 {
+    padding-top: 0px; } }
+@media (max-width: 547px) {
+  .column.one-third {
+    height: 75vh; }
+
+  .column.two-third .row h1 {
+    margin-top: 10%;
+    font-size: 36px; }
+
+  .column.two-third .row p {
+    font-size: 15px; } }
+@media (max-width: 356px) {
+  .column.two-third .row h1 {
+    margin-top: 10%;
+    font-size: 25px; }
+
+  .one-third h1 {
+    font-size: 19px; }
+
+  .one-third p {
+    font-size: 17px; }
+
+  /*the end of responsive about page*/
+  .one-half {
+    border: none;
+    height: 50vh; }
+
+  .one-half-map {
+    height: 70vh; }
+
+  .one-half h1 {
+    font-size: 25px; }
+
+  /*responsive contact page*/ }
+/*responsive contact page*/
+@media (max-width: 886px) {
+  .one-half {
+    border: none;
+    height: 50vh; } }
+/* Footer */
+footer {
+  background: #ccc;
+  margin-top: 60px;
+  padding: 5px 0;
+  font-size: 11px;
+  text-align: center;
+  clear: both; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', helvetica, sans-serif; }
+
+/*# sourceMappingURL=style.css.map */

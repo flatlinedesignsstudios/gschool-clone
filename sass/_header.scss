@@ -3,18 +3,21 @@ header {
   background: #ccc;
   padding: 10px;
   margin-bottom: 0px;
-}
 
-/* Cancel the header margin on home page. */
-body#home header {
-  margin-bottom: 0;
-}
+  @include breakpoint($tablet) {
+    text-align: center;
+  }
 
-header .row {
-  margin-bottom: 0;
-}
+  /* Cancel the header margin on home page. */
+  body#home & {
+    margin-bottom: 0;
+  }
 
-.logo {
-  float: left;
-  
+  .row {
+    margin-bottom: 0;
+  }
+
+  .logo {
+    float: left;
+  }
 }

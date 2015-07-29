@@ -1,19 +1,19 @@
 nav {
   margin-top: 31px;
-}
 
-header nav {
-  float: right;
-  text-align: right;
-}
+  header & {
+    float: right;
+    text-align: right;
+  }
 
-nav a {
-  margin-right: 20px;
-  font-size: 18px;
-  color: #444;
-  text-decoration: none;
-}
+  a {
+    margin-right: 20px;
+    font-size: 18px;
+    color: #444;
+    text-decoration: none;
 
-nav a:last-of-type {
-  margin: 0;
+    &:last-of-type {
+      margin: 0;
+    }
+  }
 }

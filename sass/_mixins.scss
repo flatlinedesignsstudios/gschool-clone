@@ -1,16 +1,31 @@
 /* Clearfix */
-.clearfix {
+@mixin clearfix {
   *zoom: 1;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
 }
 
 
 
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
+@mixin ease($time: 333ms, $element: all, $curve: ease-in-out) {
+  transition: $element $time $curve;
 }
 
-.clearfix:after {
-  clear: both;
+
+
+$tablet: 800px;
+$phone: 400px;
+
+@mixin breakpoint($size) {
+  @media (max-width: $size) {
+    @content;
+  }
 }
